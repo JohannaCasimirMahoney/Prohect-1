@@ -11,6 +11,28 @@ $(document).ready(function () {
   };
   firebase.initializeApp(config);
 });
+// $('.dropdown-toggle').dropdown()
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
 
 
 // Yelp API
@@ -19,7 +41,7 @@ $(document).ready(function () {
 var apiKey = "Mmic2d8wVdogrtxq2vDSeF44D35XjDRePYKnTd3DoYFJZgzxFP5eJKCwrUxMu8D53RSohe8VfuvnVvj9jSo30AUTo-KsSJnw4bG6MubT0HfshOsRUxymYSunnIXCXHYx";
 
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-var queryUrl = "https://api.yelp.com/v3/events?location=" + place;
+var queryUrl = "https://api.yelp.com/v3/events?location=" + "Sacramento";
 // var place = $("#zipcode").val();
 // console.log(place);
 // Make the Yelp Fusion API call
@@ -29,7 +51,8 @@ $.ajax({
   },
 
   url: proxyUrl + queryUrl,
-  method: "GET"
+  method: "GET",
+  
 }).then(function (response) {
   console.log(response);
 
