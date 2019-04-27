@@ -21,8 +21,9 @@
 
 <body>
 
-<h2>JAF</h2>
-<div class="dropdown">
+<h2>J.A.F <h2>
+<div class="btn-group">
+    <div style="text-align: center">          
     <button onclick="myFunction()" class="dropbtn">MAKE</button>
     <div id="myDropdown" class="dropdown-content">
       <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
@@ -35,6 +36,35 @@
       <a href="#tools">FERRARI</a>
     </div>
   </div>
+  <div class="btn-group">
+      <div style="text-align: center">          
+      <button onclick="myFunction1()" class="btngroup">MODEL</button> 
+      <div id="myDropdown1" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="#about">550</a>
+        <a href="#base">X5</a>
+        <a href="#blog">S550</a>
+        <a href="#contact">F-150</a>
+        <a href="#custom">325i</a>
+        <a href="#support">X</a>
+        <a href="#tools">488 SPIDER</a>
+      </div>
+    </div>
+    <div class="btn-group">
+        <button onclick="myFunction2()" class="btngroup">YEAR</button>
+        <div id="myDropdown2" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="#about">2019</a>
+          <a href="#base">2018</a>
+          <a href="#blog">2017</a>
+          <a href="#contact">2016</a>
+          <a href="#custom">2015</a>
+          <a href="#support">2014</a>
+          <a href="#tools">2013</a>
+        </div>
+      </div>
+      </div>
+</div>     
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
   

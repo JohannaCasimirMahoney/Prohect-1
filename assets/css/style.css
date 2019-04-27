@@ -1,3 +1,27 @@
+
+}
+
+.btn-group button {
+    margin-left: 180px;
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -30,6 +54,7 @@
   }
   
   .dropdown-content {
+    margin-left: 50px;  
     display: none;
     position: absolute;
     background-color: #f6f6f6;
@@ -40,11 +65,14 @@
   }
   
   .dropdown-content a {
+    margin-left: 100px;  
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
+  
+
   
   .dropdown a:hover {background-color: #ddd;}
   
