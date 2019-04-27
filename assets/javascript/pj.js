@@ -41,7 +41,7 @@ function filterFunction() {
 var apiKey = "Mmic2d8wVdogrtxq2vDSeF44D35XjDRePYKnTd3DoYFJZgzxFP5eJKCwrUxMu8D53RSohe8VfuvnVvj9jSo30AUTo-KsSJnw4bG6MubT0HfshOsRUxymYSunnIXCXHYx";
 
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-var queryUrl = "https://api.yelp.com/v3/events?location=" + place;
+var queryUrl = "https://api.yelp.com/v3/events?location=" + "Sacramento";
 // var place = $("#zipcode").val();
 // console.log(place);
 // Make the Yelp Fusion API call
