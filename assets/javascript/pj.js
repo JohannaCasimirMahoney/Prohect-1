@@ -40,22 +40,32 @@ function filterFunction() {
 
 var apiKey = "Mmic2d8wVdogrtxq2vDSeF44D35XjDRePYKnTd3DoYFJZgzxFP5eJKCwrUxMu8D53RSohe8VfuvnVvj9jSo30AUTo-KsSJnw4bG6MubT0HfshOsRUxymYSunnIXCXHYx";
 
-// var place = $("#zipcode").val();
-// console.log(place);
-
-place = "Sacramento";
-
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 var queryUrl = "https://api.yelp.com/v3/events?location=" + place;
-
-
-// Creating an AJAX call for the specific giphy button being clicked
+// var place = $("#zipcode").val();
+// console.log(place);
+// Make the Yelp Fusion API call
 $.ajax({
+  beforeSend: function (xhr) {
+    xhr.setRequestHeader("Authorization", "Bearer " + apiKey)
+  },
+
   url: proxyUrl + queryUrl,
   method: "GET",
-  beforeSend: function (xhr) {
-    { xhr.setRequestHeader("Authorization", "Bearer " + apiKey) };
-  }
+  
 }).then(function (response) {
   console.log(response);
+
+  console.log(response.events["0"].event_site_url);
+  console.log(response.events["0"].image_url);
+  console.log(response.events["0"].name);
+  console.log(response.events["0"].description);
+
 });
+// Creating an AJAX call for the specific giphy button being clicked
+// $.ajax({
+//   url: proxyUrl + queryUrl,
+//   method: "GET"
+// }).then(function (response) {
+//   console.log(response);
+// });
