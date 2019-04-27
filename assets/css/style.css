@@ -91,12 +91,12 @@ body {
  padding: 10px;
 }
 
-.search-box:hover > .buscar-txt {
+.search-box:hover > .search-txt {
  width: 240px;
  padding: 0 6px;
 }
 
-.search-box:hover > .buscar-btn {
+.search-box:hover > .search-btn {
  background: white;
  color: black;
 }
