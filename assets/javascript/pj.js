@@ -41,6 +41,43 @@ function filterFunction() {
 }
 
 
+window.onload = function () {
+  L.mapquest.key = 'AtUKM1K0D2W4igYqGy89ehVyWDXNUitF';
+
+  var map = L.mapquest.map('map', {
+    center: [37.7749, -122.4194],
+    layers: L.mapquest.tileLayer('map'),
+    zoom: 12
+  });
+
+  map.addControl(L.mapquest.control());
+}
+var mapKey = "AtUKM1K0D2W4igYqGy89ehVyWDXNUitF"
+//const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+var queryUrl = "https://www.mapquestapi.com/search/v2/radius?origin=Denver,+CO&radius=0.15&maxMatches=3&ambiguities=ignore&hostedData=mqap.ntpois|group_sic_code=?|581208&outFormat=json&key=" + mapKey;
+// var place = $("#zipcode").val();
+// console.log(place);
+// Make the Yelp Fusion API call
+$.ajax({
+  // beforeSend: function (xhr) {
+  //   xhr.setRequestHeader("Authorization", "Bearer " + apiKey)
+  // },
+
+  url: queryUrl,
+  method: "GET",
+
+}).then(function (response) {
+  console.log(response);
+
+  console.log(response.events["0"].event_site_url);
+  console.log(response.events["0"].image_url);
+  console.log(response.events["0"].name);
+  console.log(response.events["0"].description);
+
+});
+
+
+
 // Yelp API
 var apiKey = "Mmic2d8wVdogrtxq2vDSeF44D35XjDRePYKnTd3DoYFJZgzxFP5eJKCwrUxMu8D53RSohe8VfuvnVvj9jSo30AUTo-KsSJnw4bG6MubT0HfshOsRUxymYSunnIXCXHYx";
 
