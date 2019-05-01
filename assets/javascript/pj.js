@@ -114,4 +114,4 @@ $(".search-btn").on("click", function (event) {
 
 });
 
-// function to to call.then functions
+// function to to call".then" functions
