@@ -1,13 +1,23 @@
 body {
  margin: 0;
  padding: 0;
- background: #e84118;
+ background: #2f3640;
+ color: #cf7806;
 }
 
+.jumbotron {
+    background-color: #2f3640;
+    text-align: center;
+}
+/************************************************************************************************/
+h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+/************************************************************************************************/
 .btn-group button {
-    margin-left: 180px;
-    background-color: #4CAF50; /* Green background */
-    border: 1px solid green; /* Green border */
+    margin-left: 190px;
+    background-color: transparent; /* Green background */
+    border: 1px solid transparent; /* Green border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
@@ -25,7 +35,7 @@ body {
     border-right: none; /* Prevent double borders */
   }
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #cf7806;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -34,7 +44,7 @@ body {
   }
   
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #cf7806;
   }
   
   #myInput {
@@ -56,7 +66,7 @@ body {
   }
   
   .dropdown-content {
-    margin-left: 50px;  
+    margin-left: 40px;  
     display: none;
     position: absolute;
     background-color: #f6f6f6;
@@ -73,20 +83,17 @@ body {
     text-decoration: none;
     display: block;
   }
-  
-  
   .dropdown a:hover {background-color: #ddd;}
 
-  /* Search box css */
-  
-  .show {display: block;}
-.search-box {
+ /************************************************************************************************/
+ /* Search box css */
+  .search-box {
  position: absolute;
- top: 50%;
+ top: 60%;
  left: 50%;
  transform: translate(-50%, -50%);
  background: #2f3640;
- height: 40px;
+ height: 55px;
  border-radius: 40px;
  padding: 10px;
 }
@@ -98,7 +105,7 @@ body {
 
 .search-box:hover > .search-btn {
  background: white;
- color: black;
+ color: #e84118;
 }
 
 .search-btn {
@@ -129,9 +136,8 @@ body {
  color: white;
  font-size: 16px;
  transition: 0.4s;
- line-height: 40px;
+ line-height: 30px;
  width: 0px;
  font-weight: bold;
 }
-
 
