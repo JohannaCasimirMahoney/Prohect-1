@@ -38,6 +38,6 @@ In addition, the user should have the capability to add the make, model, and yea
 *Yelp API
 
 
-<a href="https://johannacasimirmahoney.github.io/Prohect-1/">Project 1</a>
+<a href="https://johannacasimirmahoney.github.io/Prohect-1/">J.A.F. Automotive - Project 1</a>
 
 <a href="https://github.com/JohannaCasimirMahoney/Prohect-1">Get Code</a>
