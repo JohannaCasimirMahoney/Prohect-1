@@ -1,11 +1,11 @@
 # J.A.F. Automotive - Project 1
 
 # Project members
-*Johanna Casimir-Mahoney
+* Johanna Casimir-Mahoney
 
-*Alex Anna Rozymuradov
+* Alex Anna Rozymuradov
 
-*Filmon M Habtu
+* Filmon M Habtu
 
 # Overview
 
