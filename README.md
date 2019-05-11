@@ -3,11 +3,13 @@
 # J.A.F. Automotive
 
 # Project members
-Johanna Casimir-Mahoney
-Alex Anna Rozymuradov
-Filmon M Habtu
+*Johanna Casimir-Mahoney
 
-###Overview
+*Alex Anna Rozymuradov
+
+*Filmon M Habtu
+
+#Overview
 
 J.A.F. Automotive is an interactive tool where the user can enter specific key words in the search bar generating the nearest auto repair shop / mechanics in the area based on GPS signal.
 
