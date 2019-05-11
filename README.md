@@ -1,6 +1,4 @@
-# Project 1
-
-# J.A.F. Automotive
+# J.A.F. Automotive - Project 1
 
 # Project members
 *Johanna Casimir-Mahoney
@@ -9,7 +7,7 @@
 
 *Filmon M Habtu
 
-#Overview
+# Overview
 
 J.A.F. Automotive is an interactive tool where the user can enter specific key words in the search bar generating the nearest auto repair shop / mechanics in the area based on GPS signal.
 
